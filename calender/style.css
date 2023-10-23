@@ -1,0 +1,67 @@
+table.cal{
+    color: #000;
+    border-spacing: 0;
+    border: #000 solid 3px;
+    -webkit-border-radius: 25px 25px 0 0 ;
+    border-radius: 0 0 25px 25px;
+}
+tr:nth-child(odd){
+    background: #f1e2e2;
+}
+tr:nth-child(even){
+    background: #9a5a5a;
+}
+
+tr:last-child{
+    -webkit-border-radius: 25px 25px 0 0;
+    border-radius: 0 0 25px 25px;
+}
+tr:last-child>td:first-child{
+    -webkit-border-radius: 0 0 0 25px;
+    border-radius: 0 0 0 25px;
+}
+tr:last-child>td:last-child{
+    -webkit-border-radius: 0 0 25px 0;
+    border-radius: 0 0 25px 0;
+}
+.cal caption{
+    color: #9a5a5a;
+    text-transform: uppercase;
+    background-color: #fc9c9c;
+    font-size: 150%;
+    -webkit-border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
+
+}
+.cal th, .cal td{
+    margin: 2px;
+    padding-bottom: 2px;
+}
+.cal th{
+    background-color: #f31d1d;
+    text-align: center;
+    text-transform: capitalize;
+}
+.cal td{
+    width: 75px;
+    height: 75px;
+    vertical-align: top;
+}
+span{
+    display: block;
+    visibility: hidden;
+    text-align: center;
+    color: #310606;
+}
+td:active>span{
+    visibility: visible;
+}
+.old{
+    padding: 0;
+    margin: 0;
+    color: #9a5a5a;
+    background-color: #ebc1c1;
+    background: url("img/bg.png");
+    background-size: 75px;
+    border-spacing: 0;
+}
